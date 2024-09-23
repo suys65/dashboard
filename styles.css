@@ -1,0 +1,169 @@
+/* styles.css */
+@font-face {
+    font-family: 'nanum';
+    src: url('NanumGothic.otf') format('opentype');
+}
+body {
+    font-family: "nanum", Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #d6e4f2;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #000000;
+}
+
+nav {
+    margin-left: 120px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 100;
+    padding: 0;
+}
+
+.nav li {
+    position: relative;
+    margin-right: 70px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #6D6D6D;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-btn:hover {
+    color: #1859af;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #25357c;
+    padding: 10px;
+    list-style: none;
+    width: 150px;
+}
+
+.submenu li {
+    margin: 3px 0;
+}
+
+.submenu-btn {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+}
+
+.submenu-btn:hover {
+    background-color: #f0f8ff;
+    color: #115ebd;
+}
+
+.breadcrumb {
+    margin: 20px 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+.dashboard-title {
+    margin: 40px 30px;
+}
+
+.content-buttons {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.inactive-btn {
+    font-family: "nanum", Arial;
+    font-size: 17px;
+    background-color: #EDEDED;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.active-btn {
+    font-family: "nanum", Arial;
+    font-size: 17px;
+    background-color: #0A4DA0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.active-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -24px; /* 버튼 아래에 위치 */
+    left: 60px; /* 꼬리 위치 조정 */
+    border-width: 15px;
+    border-style: solid;
+    border-color: #0A4DA0 transparent transparent transparent; /* 말풍선 색과 동일하게 */
+}
+
+.selected-title {
+    margin-left: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+}
+
+.last-updated-title {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dashboard-box {
+    width: 90%;
+    height: 850px;
+    background-color: white;
+    border: 2px solid #ccc;
+    margin: 0 30px;
+}
+
+.dashboard-box p {
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    line-height: 400px;
+}
