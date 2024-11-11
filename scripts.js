@@ -15,7 +15,7 @@ function loadHTML(id, url) {
 
 // DOMContentLoaded 이벤트가 발생하면 모듈 로드
 document.addEventListener("DOMContentLoaded", function () {
-    loadHTML("nav", "https://suys65.github.io/dashboard/components/nav.html"); // nav 로드
+    loadHTML("nav", "/suys65.github.io/dashboard/components/nav.html"); // nav 로드
     
 });
 
