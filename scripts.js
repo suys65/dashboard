@@ -1,27 +1,28 @@
 // scripts.js
-function loadHTML(id, url) {
-    fetch(url) // HTML 파일 로드
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error(`Failed to load ${url}: ${response.statusText}`);
-            }
-            return response.text();
-        })
-        .then((html) => {
-            document.getElementById(id).innerHTML = html; // 특정 ID에 삽입
-        })
-        
+async function loadHTML(id, url, fallbackUrl = null) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${url}: ${response.statusText}`);
+        }
+        const html = await response.text();
+        document.getElementById(id).innerHTML = html;
+    } catch (error) {
+        console.error(`Error loading ${url}:`, error);
+
+        // 대체 URL이 존재하면 다시 시도
+        if (fallbackUrl) {
+            console.log(`Trying fallback URL: ${fallbackUrl}`);
+            loadHTML(id, fallbackUrl); // 대체 URL로 재시도
+        } else {
+            // 대체 URL도 없을 경우 기본 에러 메시지
+            document.getElementById(id).innerHTML = "<p>Navigation could not be loaded.</p>";
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    try {
-        // nav.html 로드 시도
-        loadHTML("nav", "./components/nav.html");
-    } catch (error) {
-        // 에러 발생 시 로그 출력 및 처리
-        loadHTML("nav", "../components/nav.html");
-
-        }
+    loadHTML("nav", "./components/nav.html", "../components/nav.html");
 });
 
 
