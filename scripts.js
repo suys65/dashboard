@@ -10,7 +10,7 @@ function loadHTML(id, url) {
         .then((html) => {
             document.getElementById(id).innerHTML = html; // 특정 ID에 삽입
         })
-        .catch((error) => console.error(error));
+        
 }
 
 document.addEventListener("DOMContentLoaded", function () {
