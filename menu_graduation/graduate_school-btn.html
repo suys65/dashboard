@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/로고.png" alt="국립 인천대학교 로고">
+        <div id="nav"></div>
+    </header>
+
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <h2>졸업</h2>
+            <ul>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('overall-submenu')">졸업생 <span class="toggle-arrow">▼</span></a>
+
+                    <ul class="sidebar-submenu" id="overall-submenu">
+                        <li><button id="department-average-btn" class="sidebar-submenu-btn">학과별 졸업생 수</button></li>
+                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">연도별 졸업생 수</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('major-submenu')">대학원 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="major-submenu">
+                        <li><button id="department-average-btn" class="sidebar-submenu-btn">학과별 대학원 진학생 수</button></li>
+                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">연도별 대학원 진학생 수</button></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <section class="main-content">
+            <div class="breadcrumb" id="breadcrumb">
+                Home > 졸업 > 대학원
+            </div>
+            <div id="title" class="title">대학원</div>
+
+            <div class="content-buttons" id="content-buttons">
+                <button id="department-btn" class="inactive-btn">학과별 대학원 진학생 수</button>
+                <button id="year-btn" class="inactive-btn">연도별 대학원 진학생 수</button>
+            </div>
+            <!-- 학과별 학점, 연도별 학점 클릭 후 제목 표시 영역 -->
+            <div id="selected-title" class="selected-title"></div>
+            <p id="last-updated-title" class="last-updated-title" style="display: none;">최종 업데이트 일시: 2024년 **월 **일</p>
+
+
+            
+            <div class="dashboard-box" id="dashboard-box"></div>
+        </section>
+    </main>
+    <script src="../scripts.js" defer></script>
+
+</body>
+</html>

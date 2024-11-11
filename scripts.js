@@ -1,30 +1,76 @@
 // scripts.js
+function loadHTML(id, url) {
+    fetch(url) // HTML 파일 로드
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Failed to load ${url}: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById(id).innerHTML = html; // 특정 ID에 삽입
+        })
+        .catch((error) => console.error(error));
+}
+
+// DOMContentLoaded 이벤트가 발생하면 모듈 로드
+document.addEventListener("DOMContentLoaded", function () {
+    loadHTML("nav", "/components/nav.html"); // nav 로드
+    
+});
+
+
+
+
+
 // 하위 메뉴 토글 기능
 function toggleSubmenu(id) {
     const submenu = document.getElementById(id);
     submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
 }
-// 성적 버튼 클릭 시 하위 메뉴 표시
-document.getElementById('grade-btn').addEventListener('click', function() {
-    const gradeSubmenu = document.getElementById('grade-submenu');
-    gradeSubmenu.style.display = 'block';  // 이수 학점, 학점 하위 메뉴 보이기
-});
+
+function toggleMenu(buttonId, submenuId) {
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === buttonId) {
+            const submenu = document.getElementById(submenuId);
+            const submenus = document.querySelectorAll('.nav-submenu');
+
+            // submenus를 순회하며 필요한 작업 수행
+            submenus.forEach(submenu => {
+                submenu.style.display = 'none';
+            });
+            
+            if (submenu.style.display === 'none' || submenu.style.display === '') {
+                submenu.style.display = 'block'; // 하위 메뉴 표시
+            } else {
+                submenu.style.display = 'none'; // 하위 메뉴 숨기기
+            }
+        }
+    });
+}
+
+// grade 버튼과 하위 메뉴를 변수화하여 전달
+toggleMenu('grade-btn', 'grade-submenu');
+toggleMenu('graduation-btn', 'graduation-submenu');
+toggleMenu('admission-btn', 'admission-submenu');
+
 const Title = document.getElementById('title');
 // '학점' 버튼 클릭 시 학과별 학점, 연도별 학점 버튼 표시 및 하위 메뉴 숨김
-document.getElementById('score-btn').addEventListener('click', function() {
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.querySelector('.main-content');
+document.addEventListener('click', function (event) {
+    if (event.target && event.target.id ==='score-btn') {
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.querySelector('.main-content');
 
-    // 사이드바 표시 여부를 토글
-    sidebar.style.display = 'block';
-    mainContent.classList.add('toggled');
-    mainContent.style.display = 'block'; 
-    const gradeSubmenu = document.getElementById('grade-submenu');
-    const dashboardTitle = document.getElementById('dashboard-title');
-    gradeSubmenu.style.display = 'none';  // 하위 메뉴 숨기기
-    dashboardTitle.style.display = 'none';  // 최종 업데이트 일시 숨기기
-    Title.textContent = this.textContent;
-
+        // 사이드바 표시 여부를 토글
+        sidebar.style.display = 'block';
+        mainContent.classList.add('toggled');
+        mainContent.style.display = 'block'; 
+        const gradeSubmenu = document.getElementById('grade-submenu');
+        const dashboardTitle = document.getElementById('dashboard-title');
+        gradeSubmenu.style.display = 'none';  // 하위 메뉴 숨기기
+        dashboardTitle.style.display = 'none';  // 최종 업데이트 일시 숨기기
+        Title.textContent = this.textContent;
+    } 
 });
 
 const selectedTitle = document.getElementById('selected-title');
@@ -118,3 +164,4 @@ document.addEventListener('DOMContentLoaded', function() {
         side_active(yearBtn2) 
     });
 });
+

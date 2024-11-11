@@ -33,7 +33,6 @@ header {
     color: #000000;
 }
 .sidebar {
-    display: none;
     position: fixed;
     left: 0;
     top: 120px;
@@ -87,10 +86,12 @@ header {
     text-decoration: none;
     color: #3d3d3d;
     display: block;
-    padding: 7px 10px;
+    padding: 8px 5px;
     background-color: transparent;
+    width: 190px;
     border: none; /* 테두리 제거 */
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
 }
 
 /* 활성화 상태 (active 버전) */
@@ -100,10 +101,11 @@ header {
     background-color: #104c9b;
     border: none; /* 테두리 제거 */
      /* 텍스트를 굵게 표시 (선택 사항) */
-    padding: 7px 10px; 
-    padding-right: 85px;
+    padding: 8px 5px; 
+    width: 190px;
     border-radius: 5px; /* 모서리를 둥글게 (선택 사항) */
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: left;
 }
 
 .sidebar-submenu-btn:hover {
@@ -120,7 +122,7 @@ header {
     border: 1px solid #25357c;
     padding: 10px;
     list-style: none;
-    width: 140px;
+    width: 100px;
 }
 
 .nav-submenu-btn {
@@ -128,6 +130,7 @@ header {
     color: black;
     display: block;
     padding: 5px 0px;
+    width: 100px;
 }
 
 .nav-submenu-btn:hover {
@@ -141,8 +144,7 @@ header {
 }
 /* 메인 콘텐츠가 사이드바에 가려지지 않도록 여백 추가 */
 .main-content {
-    margin-left: 220px; /* 사이드바가 나타날 공간 확보 */
-    display: none;
+    margin-left: 30px; /* 사이드바가 나타날 공간 확보 */
     padding-left: 330px;
     transition: margin-left 0.3s ease;
 }
