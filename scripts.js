@@ -13,11 +13,17 @@ function loadHTML(id, url) {
         .catch((error) => console.error(error));
 }
 
-// DOMContentLoaded 이벤트가 발생하면 모듈 로드
 document.addEventListener("DOMContentLoaded", function () {
-    loadHTML("nav", "./components/nav.html"); // nav 로드
-    
+    try {
+        // nav.html 로드 시도
+        loadHTML("nav", "./components/nav.html");
+    } catch (error) {
+        // 에러 발생 시 로그 출력 및 처리
+        loadHTML("nav", "../components/nav.html");
+
+        }
 });
+
 
 
 
