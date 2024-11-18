@@ -116,7 +116,7 @@ header {
 .nav-submenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 140%;
     left: 0;
     background-color: #fff;
     border: 1px solid #25357c;
@@ -130,6 +130,7 @@ header {
     color: black;
     display: block;
     padding: 5px 0px;
+    height: 25px;
     width: 100px;
 }
 

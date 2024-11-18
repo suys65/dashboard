@@ -60,6 +60,8 @@ function toggleMenu(buttonId, submenuId) {
 toggleMenu('grade-btn', 'grade-submenu');
 toggleMenu('graduation-btn', 'graduation-submenu');
 toggleMenu('admission-btn', 'admission-submenu');
+toggleMenu('record-btn', 'record-submenu');
+toggleMenu('others-btn', 'others-submenu');
 
 const Title = document.getElementById('title');
 // '학점' 버튼 클릭 시 학과별 학점, 연도별 학점 버튼 표시 및 하위 메뉴 숨김
