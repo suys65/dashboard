@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const departmentBtn2 = document.getElementById('department-average-btn');
     const yearBtn1 = document.getElementById('year-btn');
     const yearBtn2 = document.getElementById('grade-level-average-btn');
-
+    const aaa = document.getElementById('aaa-btn');
+    const bbb = document.getElementById('bbb-btn');
     // '학과별 학점' 버튼
     departmentBtn1.addEventListener('click', function() {
         //handleButtonClick(departmentBtn1, 'https://public.tableau.com/views/_17271092566780/sheet4?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link');
@@ -176,5 +177,19 @@ document.addEventListener('DOMContentLoaded', function() {
         handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
         side_active(yearBtn2) 
     });
+    // 'aaa' 버튼
+    aaa.addEventListener('click', function() {
+        //handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
+        handleButtonClick(aaa, '../image/평균학점.png');
+        side_active(yearBtn2) 
+    });
+    
+    // 'bbb' 버튼
+    bbb.addEventListener('click', function() {
+        //handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
+        handleButtonClick(bbb, '../image/학점구간.png');
+        side_active(yearBtn2) 
+    });
+   
 });
 
