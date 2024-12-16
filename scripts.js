@@ -124,9 +124,9 @@ function handleButtonClick(button, tableauURL) {
         hideTabs: true,
         hideToolbar: true
     };
-    dashboardBox.innerHTML = `<img src="${tableauURL}" alt="대체 이미지" style="width: 100%; height: auto;">`;
+    //dashboardBox.innerHTML = `<img src="${tableauURL}" alt="대체 이미지" style="width: 100%; height: auto;">`;
     // Create new Tableau Viz
-    //viz = new tableau.Viz(dashboardBox, tableauURL, options);
+    viz = new tableau.Viz(dashboardBox, tableauURL, options);
 }
 
 function side_active(button) {
@@ -155,26 +155,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const bbb = document.getElementById('bbb-btn');
     // '학과별 학점' 버튼
     departmentBtn1.addEventListener('click', function() {
-        //handleButtonClick(departmentBtn1, 'https://public.tableau.com/views/_17271092566780/sheet4?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link');
-        handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
+        handleButtonClick(departmentBtn1, 'https://prod-apnortheast-a.online.tableau.com/#/site/inu_dashboard/workbooks/2659615/views');
+        //handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
         side_active(departmentBtn2)    
     });
     // '학과별 학점' 버튼
     departmentBtn2.addEventListener('click', function() {
-        //handleButtonClick(departmentBtn1, 'https://public.tableau.com/views/_17271092566780/sheet4?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link');
-        handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
+        handleButtonClick(departmentBtn1, 'https://prod-apnortheast-a.online.tableau.com/#/site/inu_dashboard/workbooks/2659615/views');
+        //handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
         side_active(departmentBtn2)
     });
 
     // '연도별 학점' 버튼
     yearBtn1.addEventListener('click', function() {
-        //handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
-        handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
+        handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
+        //handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
         side_active(yearBtn2) 
     });
     yearBtn2.addEventListener('click', function() {
         handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
-        handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
+        //handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
         side_active(yearBtn2) 
     });
     // 'aaa' 버튼
