@@ -258,7 +258,8 @@ nav {
     content: '';
     position: absolute;
     bottom: -24px; /* 버튼 아래에 위치 */
-    left: 85px; /* 꼬리 위치 조정 */
+    left: 50%; /* 꼬리 위치 조정 */
+    transform: translateX(-50%);
     border-width: 15px;
     border-style: solid;
     border-color: #0A4DA0 transparent transparent transparent; /* 말풍선 색과 동일하게 */

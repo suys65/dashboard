@@ -61,7 +61,7 @@ toggleMenu('grade-btn', 'grade-submenu');
 toggleMenu('graduation-btn', 'graduation-submenu');
 toggleMenu('admission-btn', 'admission-submenu');
 toggleMenu('record-btn', 'record-submenu');
-toggleMenu('others-btn', 'others-submenu');
+toggleMenu('etc-btn', 'etc-submenu');
 
 const Title = document.getElementById('title');
 // '학점' 버튼 클릭 시 학과별 학점, 연도별 학점 버튼 표시 및 하위 메뉴 숨김
@@ -146,28 +146,44 @@ function side_active(button) {
     });
 }
 
+function setupButtonHandlers(button1, button2, link) {
+    // 기존 이벤트 리스너 제거 (중복 방지)
+    button1.replaceWith(button1.cloneNode(true));
+    button2.replaceWith(button2.cloneNode(true));
+
+    // 버튼을 다시 가져옴
+    const newButton1 = document.getElementById(button1.id);
+    const newButton2 = document.getElementById(button2.id);
+
+    // 버튼 1 클릭 이벤트
+    newButton1.addEventListener('click', function () {
+        handleButtonClick(newButton1, link);
+        side_active(newButton2); // 버튼 2 활성화
+    });
+
+    // 버튼 2 클릭 이벤트
+    newButton2.addEventListener('click', function () {
+        handleButtonClick(newButton2, link);
+        side_active(newButton1); // 버튼 1 활성화
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    const allstaffbtn2 = document.getElementById('allstaff-btn1');
+    const allstaffbtn1 = document.getElementById('allstaff-btn2');
+    // 함수 호출로 이벤트 핸들러 설정
+    setupButtonHandlers(allstaffbtn1, allstaffbtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet4?:origin=card_share_link&:embed=n');
+        
     const departmentBtn1 = document.getElementById('department-btn');
     const departmentBtn2 = document.getElementById('department-average-btn');
+    setupButtonHandlers(departmentBtn1, departmentBtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
+    
+    
+    
+
     const yearBtn1 = document.getElementById('year-btn');
     const yearBtn2 = document.getElementById('grade-level-average-btn');
-    const aaa = document.getElementById('aaa-btn');
-    const bbb = document.getElementById('bbb-btn');
-    // '학과별 학점' 버튼
-    departmentBtn1.addEventListener('click', function() {
-        handleButtonClick(departmentBtn1, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
-        //handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
-        side_active(departmentBtn2)    
-    });
-    // '학과별 학점' 버튼
-    departmentBtn2.addEventListener('click', function() {
-        handleButtonClick(departmentBtn1, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
-        //handleButtonClick(departmentBtn1, '../image/학과별 통계.png');
-        side_active(departmentBtn2)
-    });
-
     // '연도별 학점' 버튼
     yearBtn1.addEventListener('click', function() {
         //handleButtonClick(yearBtn1, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
@@ -179,6 +195,9 @@ document.addEventListener('DOMContentLoaded', function() {
         handleButtonClick(yearBtn1, '../image/학과 내 통계.png');
         side_active(yearBtn2) 
     });
+    
+    const aaa = document.getElementById('aaa-btn');
+    const bbb = document.getElementById('bbb-btn');
     // 'aaa' 버튼
     aaa.addEventListener('click', function() {
         handleButtonClick(aaa, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/12?:origin=card_share_link&:embed=n');
@@ -192,6 +211,6 @@ document.addEventListener('DOMContentLoaded', function() {
         handleButtonClick(bbb, '../image/학점구간.png');
         side_active(yearBtn2) 
     });
-   
+    
 });
 
