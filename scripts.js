@@ -175,9 +175,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // 함수 호출로 이벤트 핸들러 설정
     setupButtonHandlers(allstaffbtn1, allstaffbtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet4?:origin=card_share_link&:embed=n');
         
+    const staffnumbtn2 = document.getElementById('staffnum-btn1');
+    const staffnumbtn1 = document.getElementById('staffnum-btn2');
+    // 함수 호출로 이벤트 핸들러 설정
+    setupButtonHandlers(staffnumbtn1, staffnumbtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet5?:origin=card_share_link&:embed=n');
+       
+    const staffrankbtn2 = document.getElementById('staffrank-btn1');
+    const staffrankbtn1 = document.getElementById('staffrank-btn2');
+    // 함수 호출로 이벤트 핸들러 설정
+    setupButtonHandlers(staffrankbtn1, staffrankbtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet6?:origin=card_share_link&:embed=n');
+
     const departmentBtn1 = document.getElementById('department-btn');
     const departmentBtn2 = document.getElementById('department-average-btn');
     setupButtonHandlers(departmentBtn1, departmentBtn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
+    
     
     
     
