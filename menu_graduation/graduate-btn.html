@@ -19,18 +19,17 @@
             <h2>졸업</h2>
             <ul>
                 <li>
-                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('overall-submenu')">졸업생 <span class="toggle-arrow">▼</span></a>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('graduate-submenu')">졸업생 <span class="toggle-arrow">▼</span></a>
 
-                    <ul class="sidebar-submenu" id="overall-submenu">
-                        <li><button id="department-average-btn" class="sidebar-submenu-btn">학과별 졸업생 수</button></li>
-                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">연도별 졸업생 수</button></li>
+                    <ul class="sidebar-submenu" id="graduate-submenu">
+                        <li><button id="major_graduate_btn2" class="sidebar-submenu-btn">학과별 졸업생 수</button></li>
+                        <li><button id="major_delay_btn2" class="sidebar-submenu-btn">학과별 졸업유예 학생 수</button></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('major-submenu')">대학원 <span class="toggle-arrow">▼</span></a>
-                    <ul class="sidebar-submenu" id="major-submenu">
-                        <li><button id="department-average-btn" class="sidebar-submenu-btn">학과별 대학원 진학생 수</button></li>
-                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">연도별 대학원 진학생 수</button></li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('graduatesc-submenu')">대학원 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="graduatesc-submenu">
+                        <li><button id="major_graduatesc_btn2" class="sidebar-submenu-btn">학과별 대학원 진학생 수</button></li>
                     </ul>
                 </li>
                 
@@ -45,8 +44,8 @@
             <div id="title" class="title">졸업생</div>
 
             <div class="content-buttons" id="content-buttons">
-                <button id="department-btn" class="inactive-btn">학과별 졸업생 수</button>
-                <button id="year-btn" class="inactive-btn">연도별 졸업생 수</button>
+                <button id="major_graduate_btn1" class="inactive-btn">학과별 졸업생 수</button>
+                <button id="major_delay_btn1" class="inactive-btn">학과별 졸업유예 학생 수</button>
             </div>
             <!-- 학과별 학점, 연도별 학점 클릭 후 제목 표시 영역 -->
             <div id="selected-title" class="selected-title"></div>

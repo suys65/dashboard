@@ -123,6 +123,7 @@ header {
     padding: 10px;
     list-style: none;
     width: 100px;
+    z-index: 1000; 
 }
 
 .nav-submenu-btn {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image/로고.png" alt="국립 인천대학교 로고">
+        <div id="nav"></div>
+    </header>
+
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <h2>학적</h2>
+            <ul>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('leavereturn-submenu')">휴/복학 <span class="toggle-arrow">▼</span></a>
+
+                    <ul class="sidebar-submenu" id="leavereturn-submenu">
+                        <li><button id="major_leavereturn_btn2" class="sidebar-submenu-btn">학과별 휴복학생 수 </button></li>
+                        <li><button id="grade_leavereturn_btn2" class="sidebar-submenu-btn">학년별 휴복학생 수</button></li>
+                        <li><button id="major_term_btn2" class="sidebar-submenu-btn">학과별 평균 휴학 기간</button></li>
+                        <li><button id="grade_term_btn2" class="sidebar-submenu-btn">학년별 평균 휴학 기간</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('drop-submenu')">자퇴 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="drop-submenu">
+                        <li><button id="major_drop_btn2" class="sidebar-submenu-btn">학과별 자퇴생 수</button></li>
+                        <li><button id="grade_drop_btn2" class="sidebar-submenu-btn">학년별 자퇴생 수</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('majorchange-submenu')">전과 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="majorchange-submenu">
+                        <li><button id="major_in_btn2" class="sidebar-submenu-btn">학과별 전입 학생 수</button></li>
+                        <li><button id="grade_in_btn2" class="sidebar-submenu-btn">학년별 전입 학생 수</button></li>
+                        <li><button id="major_out_btn2" class="sidebar-submenu-btn">학과별 전출 학생 수</button></li>                        
+                        <li><button id="grade_out_btn2" class="sidebar-submenu-btn">학년별 전출 학생 수</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('doublemajor-submenu')">부/복수전공 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="doublemajor-submenu">
+                        <li><button id="major_indouble_btn2" class="sidebar-submenu-btn">신청학과별 학생 수</button></li>
+                        <li><button id="grade_indouble_btn2" class="sidebar-submenu-btn">신청학과-학년별 학생 수</button></li>
+                        <li><button id="major_outdouble_btn2" class="sidebar-submenu-btn">소속학과별 학생 수</button></li>                        
+                        <li><button id="grade_outdouble_btn2" class="sidebar-submenu-btn">소속학과-학년별 학생 수</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('linkedmajor-submenu')">연계/융합전공 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="linkedmajor-submenu">
+                        <li><button id="major_inlink_btn2" class="sidebar-submenu-btn">연계/융합전공별 학생 수</button></li>
+                        <li><button id="grade_inlink_btn2" class="sidebar-submenu-btn">연계/융합전공-학년별 학생 수</button></li>
+                        <li><button id="major_outlink_btn2" class="sidebar-submenu-btn">소속학과별 학생 수</button></li>                        
+                        <li><button id="grade_outlink_btn2" class="sidebar-submenu-btn">소속학과-학년별 학생 수</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <section class="main-content">
+            <div class="breadcrumb" id="breadcrumb">
+                Home > 학적 > 연계/융합전공
+            </div>
+            <div id="title" class="title">연계/융합전공</div>
+
+            <div class="content-buttons" id="content-buttons">
+                <button id="major_inlink_btn1" class="inactive-btn">연계/융합전공별 학생 수</button>
+                <button id="grade_inlink_btn1" class="inactive-btn">연계/융합전공-학년별 학생 수</button>
+                <button id="major_outlink_btn1" class="inactive-btn">소속학과별 학생 수</button>                       
+                <button id="grade_outlink_btn1" class="inactive-btn">소속학과-학년별 학생 수</button>
+            </div>
+            <!-- 학과별 학점, 연도별 학점 클릭 후 제목 표시 영역 -->
+            <div id="selected-title" class="selected-title"></div>
+            <p id="last-updated-title" class="last-updated-title" style="display: none;">최종 업데이트 일시: 2024년 **월 **일</p>
+
+
+            
+            <div class="dashboard-box" id="dashboard-box"></div>
+        </section>
+    </main>
+    <script src="../scripts.js" defer></script>
+
+</body>
+</html>
