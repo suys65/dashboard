@@ -19,18 +19,18 @@
             <h2>입학</h2>
             <ul>
                 <li>
-                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('overall-submenu')">신입생 충원 <span class="toggle-arrow">▼</span></a>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('freshman-submenu')">신입생 충원 <span class="toggle-arrow">▼</span></a>
 
-                    <ul class="sidebar-submenu" id="overall-submenu">
-                        <li><button id="department-average-btn" class="sidebar-submenu-btn">입학 유형별 신입생 충원율</button></li>
-                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">학과별 신입생 충원율</button></li>
+                    <ul class="sidebar-submenu" id="freshman-submenu">
+                        <li><button id="major_freshman_btn2" class="sidebar-submenu-btn">학과별 신입생 수</button></li>
+                        <li><button id="exam_freshman_btn2" class="sidebar-submenu-btn">전형별 신입생 수</button></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('major-submenu')">신입생 성적 <span class="toggle-arrow">▼</span></a>
-                    <ul class="sidebar-submenu" id="major-submenu">
-                        <li><button id="department-average-btn" class="sidebar-submenu-btn">입학 유형별 신입생 성적</button></li>
-                        <li><button id="grade-level-average-btn" class="sidebar-submenu-btn">학과별 신입생 성적</button></li>
+                    <a href="#" class="sidebar-btn" onclick="toggleSubmenu('freshscore-submenu')">신입생 성적 <span class="toggle-arrow">▼</span></a>
+                    <ul class="sidebar-submenu" id="freshscore-submenu">
+                        <li><button id="major_freshscore_btn2" class="sidebar-submenu-btn">학과별 신입생 성적</button></li>
+                        <li><button id="exam_freshscore_btn2" class="sidebar-submenu-btn">입학유형별 신입생 성적</button></li>
                     </ul>
                 </li>
                 
@@ -45,9 +45,10 @@
             <div id="title" class="title">신입생 성적</div>
 
             <div class="content-buttons" id="content-buttons">
-                <button id="department-btn" class="inactive-btn">입학 유형별 신입생 성적</button>
-                <button id="year-btn" class="inactive-btn">학과별 신입생 성적</button>
+                <button id="major_freshscore_btn1" class="inactive-btn">학과별 신입생 성적</button>
+                <button id="exam_freshscore_btn1" class="inactive-btn">입학유형별 신입생 성적</button>
             </div>
+
             <!-- 학과별 학점, 연도별 학점 클릭 후 제목 표시 영역 -->
             <div id="selected-title" class="selected-title"></div>
             <p id="last-updated-title" class="last-updated-title" style="display: none;">최종 업데이트 일시: 2024년 **월 **일</p>
