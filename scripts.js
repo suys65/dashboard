@@ -191,15 +191,11 @@ document.addEventListener('DOMContentLoaded', function() {  //신입생성적
 document.addEventListener('DOMContentLoaded', function() {  //전체학점
     const major_allscore_btn1 = document.getElementById('major_allscore_btn1');
     const major_allscore_btn2 = document.getElementById('major_allscore_btn2');
-    setupButtonHandlers(major_allscore_btn1, major_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_allscore_btn1, major_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367386338060/1?:origin=card_share_link&:embed=n');
 
     const grade_allscore_btn1 = document.getElementById('grade_allscore_btn1');
     const grade_allscore_btn2 = document.getElementById('grade_allscore_btn2');
-    setupButtonHandlers(grade_allscore_btn1,  grade_allscore_btn2, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
-
-    const bin_allscore_btn1 = document.getElementById('bin_allscore_btn1');
-    const bin_allscore_btn2 = document.getElementById('bin_allscore_btn2');
-    setupButtonHandlers(bin_allscore_btn1,  bin_allscore_btn2, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
+    setupButtonHandlers(grade_allscore_btn1,  grade_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367386338060/2?:origin=card_share_link&:embed=n');
 
 });    
     
@@ -217,18 +213,26 @@ document.addEventListener('DOMContentLoaded', function() {  //교원
     setupButtonHandlers(major_staff_btn1, major_staff_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367103142750/4?:origin=card_share_link&:embed=n');
 });
 
+document.addEventListener('DOMContentLoaded', function() {  //교육만족도
+      
+    const major_satis_btn1 = document.getElementById('major_satis_btn1');
+    const major_satis_btn2 = document.getElementById('major_satis_btn2');
+    // 함수 호출로 이벤트 핸들러 설정
+    setupButtonHandlers(major_satis_btn1, major_satis_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367416114790/1?:origin=card_share_link&:embed=n');
+       
+});
 //학적-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 document.addEventListener('DOMContentLoaded', function() {  //자퇴
     
     const major_drop_btn1 = document.getElementById('major_drop_btn1');
     const major_drop_btn2 = document.getElementById('major_drop_btn2');
     // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_drop_btn1, major_drop_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet4?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_drop_btn1, major_drop_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367395681030/sheet0?:origin=card_share_link&:embed=n');
         
     const grade_drop_btn1 = document.getElementById('grade_drop_btn1');
     const grade_drop_btn2 = document.getElementById('grade_drop_btn2');
     // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(grade_drop_btn1, grade_drop_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet5?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(grade_drop_btn1, grade_drop_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367395681030/sheet1?:origin=card_share_link&:embed=n');
 });
 
 document.addEventListener('DOMContentLoaded', function() {    //부복수
