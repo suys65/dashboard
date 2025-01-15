@@ -36,7 +36,7 @@ header {
     position: fixed;
     left: 0;
     top: 100px;
-    width: 11%;
+    width: 12%;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;
@@ -148,8 +148,8 @@ header {
 }
 /* 메인 콘텐츠가 사이드바에 가려지지 않도록 여백 추가 */
 .main-content {
-    margin-left: 30px; /* 사이드바가 나타날 공간 확보 */
-    padding-left: 330px;
+    margin-left: 1.5%; /* 사이드바가 나타날 공간 확보 */
+    padding-left: 18%;
     transition: margin-left 0.3s ease;
 }
 
@@ -158,7 +158,7 @@ header {
 }
 
 nav {
-    margin-left: 120px;
+    margin-left: 95px;
 }
 
 .nav {
@@ -170,7 +170,7 @@ nav {
 
 .nav li {
     position: relative;
-    margin-right: 70px;
+    margin-right: 90px;
 }
 
 .nav-btn {
@@ -237,7 +237,7 @@ nav {
     font-size: 100%;
     background-color: #EDEDED;
     border: none;
-    padding: 1% 2%;
+    padding: 1.3% 2%;
     border-radius: 7px;
     margin-right: 2%;
     cursor: pointer;
@@ -250,7 +250,7 @@ nav {
     background-color: #0A4DA0;
     color: white;
     border: none;
-    padding: 1% 2%;
+    padding: 1.3% 2%;
     border-radius: 7px;
     margin-right: 2%;
     cursor: pointer;
