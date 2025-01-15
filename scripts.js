@@ -192,11 +192,11 @@ document.addEventListener('DOMContentLoaded', function() {  //신입생성적
 document.addEventListener('DOMContentLoaded', function() {  //전체학점
     const major_allscore_btn1 = document.getElementById('major_allscore_btn1');
     const major_allscore_btn2 = document.getElementById('major_allscore_btn2');
-    setupButtonHandlers(major_allscore_btn1, major_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367386338060/1?:origin=card_share_link&:embed=n');
-
+    setupButtonHandlers(major_allscore_btn1, major_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369747463870/1?:origin=card_share_link&:embed=n');
+                                                                   
     const grade_allscore_btn1 = document.getElementById('grade_allscore_btn1');
     const grade_allscore_btn2 = document.getElementById('grade_allscore_btn2');
-    setupButtonHandlers(grade_allscore_btn1,  grade_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367386338060/2?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(grade_allscore_btn1,  grade_allscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369747463870/2?:origin=card_share_link&:embed=n');
 
 });    
     
