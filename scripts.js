@@ -200,6 +200,27 @@ document.addEventListener('DOMContentLoaded', function() {  //전체학점
 
 });    
     
+document.addEventListener('DOMContentLoaded', function() {  //전공학점
+    const major_mascore_btn1 = document.getElementById('major_mascore_btn1');
+    const major_mascore_btn2 = document.getElementById('major_mascore_btn2');
+    setupButtonHandlers(major_mascore_btn1, major_mascore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/1?:origin=card_share_link&:embed=n');
+
+    const grade_mascore_btn1 = document.getElementById('grade_mascore_btn1');
+    const grade_mascore_btn2 = document.getElementById('grade_mascore_btn2');
+    setupButtonHandlers(grade_mascore_btn1,  grade_mascore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/2?:origin=card_share_link&:embed=n');
+
+});   
+
+document.addEventListener('DOMContentLoaded', function() {  //교양학점
+    const major_gerscore_btn1 = document.getElementById('major_gerscore_btn1');
+    const major_gerscore_btn2 = document.getElementById('major_gerscore_btn2');
+    setupButtonHandlers(major_gerscore_btn1, major_gerscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/12?:origin=card_share_link&:embed=n');
+
+    const grade_gerscore_btn1 = document.getElementById('grade_gerscore_btn1');
+    const grade_gerscore_btn2 = document.getElementById('grade_gerscore_btn2');
+    setupButtonHandlers(grade_gerscore_btn1,  grade_gerscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/22?:origin=card_share_link&:embed=n');
+
+});   
 //기타---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 document.addEventListener('DOMContentLoaded', function() {  //교원
       
