@@ -36,22 +36,23 @@ header {
     position: fixed;
     left: 0;
     top: 100px;
-    width: 200px;
+    width: 11%;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;
      
-    margin: 0px 100px;
+    margin: 0px 5%;
     /* 파란색 테두리와 둥근 모서리 설정 */
     border: 2px solid #cccccc; /* 파란색 테두리 */
     height: auto; /* 높이를 콘텐츠에 따라 자동 조정 */
+    min-height: 40%;   /*400px;*/
     border-radius: 10px; /* 모서리를 둥글게 */
 }
 
 .sidebar h2 {
     font-family: "nanum", Arial;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 130%;
+    margin-bottom: 9%;
 }
 
 .sidebar ul {
@@ -89,7 +90,7 @@ header {
     display: block;
     padding: 8px 5px;
     background-color: transparent;
-    width: 190px;
+    width: 100%;
     border: none; /* 테두리 제거 */
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: left;
@@ -103,7 +104,7 @@ header {
     border: none; /* 테두리 제거 */
      /* 텍스트를 굵게 표시 (선택 사항) */
     padding: 8px 5px; 
-    width: 190px;
+    width: 100%;
     border-radius: 5px; /* 모서리를 둥글게 (선택 사항) */
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: left;
@@ -216,8 +217,8 @@ nav {
 .breadcrumb {
     position: absolute; /* 부모 요소를 기준으로 위치 설정 */
     top: 100px; /* 위에서 20px */
-    right: 30px; /* 왼쪽에서 30px */
-    font-size: 16px;
+    right: 6.5%; /* 왼쪽에서 30px */
+    font-size: 100%;
     color: #666;
 }
 
@@ -233,25 +234,25 @@ nav {
 
 .inactive-btn {
     font-family: "nanum", Arial;
-    font-size: 17px;
+    font-size: 100%;
     background-color: #EDEDED;
     border: none;
-    padding: 15px 40px;
+    padding: 1% 2%;
     border-radius: 7px;
-    margin-right: 30px;
+    margin-right: 2%;
     cursor: pointer;
     
 }
 
 .active-btn {
     font-family: "nanum", Arial;
-    font-size: 17px;
+    font-size: 100%;
     background-color: #0A4DA0;
     color: white;
     border: none;
-    padding: 15px 40px;
+    padding: 1% 2%;
     border-radius: 7px;
-    margin-right: 30px;
+    margin-right: 2%;
     cursor: pointer;
     position: relative;
 }
