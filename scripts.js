@@ -163,11 +163,23 @@ function setupButtonHandlers(button1, button2, link) {
     });
 
     // 버튼 2 클릭 이벤트
-    newButton2.addEventListener('click', function () {
-        handleButtonClick(newButton1, link);
-        side_active(newButton2); // 버튼 1 활성화
-    }); 
+    const oldHandler = newButton2.onclick; // 기존 onclick 핸들러 저장
+
+    newButton2.addEventListener('click', function (event) {
+        // 기존 onclick 동작 실행
+        if (oldHandler) oldHandler(event);
+
+        // 버튼 1 요소 다시 찾기
+        const updatedButton1 = document.getElementById(button1.id);
+
+        // 새로운 로직 추가
+        handleButtonClick(updatedButton1, link);
+        side_active(newButton2); // 버튼 2 활성화
+    });
+
 }
+
+
 //입학----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 document.addEventListener('DOMContentLoaded', function() {  //신입생
     const major_freshman_btn1 = document.getElementById('major_freshman_btn1');
@@ -208,12 +220,13 @@ document.addEventListener('DOMContentLoaded', function() {  //전공학점
     const grade_mascore_btn1 = document.getElementById('grade_mascore_btn1');
     const grade_mascore_btn2 = document.getElementById('grade_mascore_btn2');
     setupButtonHandlers(grade_mascore_btn1,  grade_mascore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/2?:origin=card_share_link&:embed=n');
+});
 
-});   
-
-document.addEventListener('DOMContentLoaded', function() {  //교양학점
+document.addEventListener('DOMContentLoaded', function() { //교양 학점
+  
     const major_gerscore_btn1 = document.getElementById('major_gerscore_btn1');
     const major_gerscore_btn2 = document.getElementById('major_gerscore_btn2');
+    
     setupButtonHandlers(major_gerscore_btn1, major_gerscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17369653903600/12?:origin=card_share_link&:embed=n');
 
     const grade_gerscore_btn1 = document.getElementById('grade_gerscore_btn1');

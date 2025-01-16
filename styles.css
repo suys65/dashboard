@@ -36,7 +36,7 @@ header {
     position: fixed;
     left: 0;
     top: 100px;
-    width: 12%;
+    width: 13%;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;
@@ -58,6 +58,7 @@ header {
 .sidebar ul {
     font-family: "nanum", Arial;
     list-style: none;
+    font-size: 120%;
     padding: 0;
 }
 
@@ -85,6 +86,7 @@ header {
 /* 기본 스타일 */
 .sidebar-submenu-btn {
     font-family: "nanum", Arial;
+    font-size: 70%;
     text-decoration: none;
     color: #3d3d3d;
     display: block;
@@ -99,6 +101,7 @@ header {
 /* 활성화 상태 (active 버전) */
 .sidebar-submenu-btn-active {
     font-family: "nanum", Arial;
+    font-size: 70%;
     color: #fff;
     background-color: #104c9b;
     border: none; /* 테두리 제거 */
