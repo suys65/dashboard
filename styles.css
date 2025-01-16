@@ -36,7 +36,7 @@ header {
     position: fixed;
     left: 0;
     top: 100px;
-    width: 13%;
+    width: 16%;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;
@@ -151,7 +151,7 @@ header {
 }
 /* 메인 콘텐츠가 사이드바에 가려지지 않도록 여백 추가 */
 .main-content {
-    margin-left: 1.5%; /* 사이드바가 나타날 공간 확보 */
+    margin-left: 5%; /* 사이드바가 나타날 공간 확보 */
     padding-left: 18%;
     transition: margin-left 0.3s ease;
 }
