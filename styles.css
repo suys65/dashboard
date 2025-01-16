@@ -37,6 +37,7 @@ header {
     left: 0;
     top: 100px;
     width: 16%;
+    max-width: 250px;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;

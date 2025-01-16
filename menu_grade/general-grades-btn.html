@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+*******************************************************************************************************************************************\
+<``!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -22,16 +23,15 @@
                     <a href="#" class="sidebar-btn" onclick="toggleSubmenu('overall-submenu')">전체 학점 <span class="toggle-arrow">▼</span></a>
 
                     <ul class="sidebar-submenu" id="overall-submenu">
-                        <li><button id="major_allscore_btn2" class="sidebar-submenu-btn">학과별 평균 전체학점</button></li>
-                        <li><button id="grade_allscore_btn2" class="sidebar-submenu-btn">학년별 평균 전체학점</button></li>
-                        
+                        <li><button id="major_allscore_btn2" class="sidebar-submenu-btn" onclick="window.location.href='score-btn.html'">학과별 평균 전체학점</button></li>
+                        <li><button id="grade_allscore_btn2" class="sidebar-submenu-btn" onclick="window.location.href='score-btn.html'">학년별 평균 전체학점</button></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#" class="sidebar-btn" onclick="toggleSubmenu('major-submenu')">전공 학점 <span class="toggle-arrow">▼</span></a>
                     <ul class="sidebar-submenu" id="major-submenu">
-                        <li><button id="major_mascore_btn2" class="sidebar-submenu-btn">학과별 평균 전공학점</button></li>
-                        <li><button id="grade_mascore_btn2" class="sidebar-submenu-btn">학년별 평균 전공학점</button></li>
+                        <li><button id="major_mascore_btn2" class="sidebar-submenu-btn" onclick="window.location.href='major-grades-btn.html'">학과별 평균 전공학점</button></li>
+                        <li><button id="grade_mascore_btn2" class="sidebar-submenu-btn" onclick="window.location.href='major-grades-btn.html'">학년별 평균 전공학점</button></li>
                         
                     </ul>
                 </li>
