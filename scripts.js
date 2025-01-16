@@ -356,11 +356,6 @@ document.addEventListener('DOMContentLoaded', function() {    //졸업생
     // 함수 호출로 이벤트 핸들러 설정
     setupButtonHandlers(major_graduate_btn1, major_graduate_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17366944447350/1_1?:origin=card_share_link&:embed=n');
     
-    const major_delay_btn1 = document.getElementById('major_delay_btn1');
-    const major_delay_btn2 = document.getElementById('major_delay_btn2');
-    // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_delay_btn1, major_delay_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet6?:origin=card_share_link&:embed=n');
-
 });
 
 document.addEventListener('DOMContentLoaded', function() {    //대학원
