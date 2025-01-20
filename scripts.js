@@ -194,11 +194,11 @@ document.addEventListener('DOMContentLoaded', function() {  //신입생
 document.addEventListener('DOMContentLoaded', function() {  //신입생성적
     const major_freshscore_btn1 = document.getElementById('major_freshscore_btn1');
     const major_freshscore_btn2 = document.getElementById('major_freshscore_btn2');
-    setupButtonHandlers(major_freshscore_btn1, major_freshscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/1/1?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_freshscore_btn1, major_freshscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17373851199740/1?:origin=card_share_link&:embed=n');
 
     const exam_freshscore_btn1 = document.getElementById('exam_freshscore_btn1');
     const exam_freshscore_btn2 = document.getElementById('exam_freshscore_btn2');
-    setupButtonHandlers(exam_freshscore_btn1, exam_freshscore_btn2, 'https://public.tableau.com/shared/P89KFMRBQ?:display_count=n&:origin=viz_share_link');
+    setupButtonHandlers(exam_freshscore_btn1, exam_freshscore_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17373851199740/3?:origin=card_share_link&:embed=n');
 });
 //성적----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 document.addEventListener('DOMContentLoaded', function() {  //전체학점
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {  //교육만족도
     const major_satis_btn1 = document.getElementById('major_satis_btn1');
     const major_satis_btn2 = document.getElementById('major_satis_btn2');
     // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_satis_btn1, major_satis_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367416114790/1?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_satis_btn1, major_satis_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367416114790/2?:origin=card_share_link&:embed=n');
        
 });
 //학적-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//

@@ -59,7 +59,7 @@ header {
 .sidebar ul {
     font-family: "nanum", Arial;
     list-style: none;
-    font-size: 120%;
+    font-size: 110%;
     padding: 0;
 }
 
@@ -87,7 +87,7 @@ header {
 /* 기본 스타일 */
 .sidebar-submenu-btn {
     font-family: "nanum", Arial;
-    font-size: 70%;
+    font-size: 75%;
     text-decoration: none;
     color: #3d3d3d;
     display: block;
