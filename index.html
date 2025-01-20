@@ -10,12 +10,26 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./image/로고.png" alt="국립 인천대학교 로고">
+            <img src="./image/로고.png" onclick="window.location.href='index.html'"alt="국립 인천대학교 로고">
         <div id="nav"></div>
     </header>
 
     <main>
-        
+        <section class="start-content">
+            <div class="breadcrumb" id="breadcrumb">
+            Home
+            </div>
+            <div id="title" class="title">학사행정 대시보드</div>
+            
+            <div class="dashboard-start">
+                <iframe 
+                    src="https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367395681030/sheet0?:origin=card_share_link&:embed=yes"
+                    width="100%" 
+                    height="800px" 
+                    frameborder="0">
+                </iframe>
+            </div>
+        </section>
     </main>
     
     <script src="./scripts.js"></script>

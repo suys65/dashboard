@@ -156,7 +156,11 @@ header {
     padding-left: 18%;
     transition: margin-left 0.3s ease;
 }
-
+.start-content {
+    margin-left: 5%; /* 사이드바가 나타날 공간 확보 */
+    padding-left: 0%;
+    transition: margin-left 0.3s ease;
+}
 .main-content.toggled {
     margin-left: 0; /* 사이드바가 숨겨질 때 여백 제거 */
 }
@@ -294,6 +298,16 @@ nav {
 }
 
 .dashboard-box {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid #ccc;
+    
+}
+
+.dashboard-start {
     margin-left: 30px;
     margin-bottom: 30px;
     width: 90%;

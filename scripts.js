@@ -26,10 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
 // 하위 메뉴 토글 기능
 function toggleSubmenu(id) {
     const submenu = document.getElementById(id);
@@ -120,7 +116,7 @@ function handleButtonClick(button, tableauURL) {
 
     const options = {
         width: '100%',
-        height: '1000px',
+        height: '900px',
         hideTabs: true,
         hideToolbar: true
     };
@@ -131,6 +127,7 @@ function handleButtonClick(button, tableauURL) {
         dashboardBox.innerHTML = `<img src="${tableauURL}" alt="대체 이미지" style="width: 100%; height: auto;">`;
     }
 }
+
 function side_active(button) {
     // 모든 버튼을 선택
     const buttons = document.querySelectorAll('.sidebar-submenu-btn-active');
