@@ -48,10 +48,15 @@ header {
     max-height: calc(100vh - 200px); /* Limit height to viewport height minus the top and bottom margin */
 }
 
-.sidebar h2 {
+.sidebar h2 {/*사이드바-메인메뉴*/
     font-family: "nanum", Arial;
     font-size: 130%;
     margin-bottom: 9%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e7e7e7;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #3f3f3f;
 }
 
 .sidebar ul {
@@ -59,6 +64,7 @@ header {
     list-style: none;
     font-size: 110%;
     padding: 0;
+    margin: 0px 3%;
 }
 
 .sidebar-btn {
@@ -93,7 +99,7 @@ header {
     background-color: transparent;
     width: 100%;
     border: none; /* 테두리 제거 */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.1s ease, color 0.1s ease;
     text-align: left;
     border-bottom: 1px solid #ececec;
 }
