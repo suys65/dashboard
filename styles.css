@@ -139,6 +139,7 @@ header {
     padding: 5px 0px;
     height: 25px;
     width: 100px;
+    border-bottom: 1px solid #e2e2e2; /* Add bottom border */
 }
 
 .nav-submenu-btn:hover {
@@ -181,11 +182,11 @@ nav {
     margin-right: 90px;
 }
 
-.nav-btn {
+.nav-btn {/*상단바 버튼*/
     text-decoration: none;
     color: #6D6D6D;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
