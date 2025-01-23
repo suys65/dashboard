@@ -121,7 +121,7 @@ function handleButtonClick(button, tableauURL) {
 
     const options = {
         width: '100%',
-        height: '900px',
+        height: '1000px',
         hideTabs: true,
         hideToolbar: true
     };
