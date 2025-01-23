@@ -38,7 +38,11 @@ function toggleSubmenu(id) {
     const submenu = document.getElementById(id);
     submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
 }
-
+// 하위 메뉴 토글 기능
+function toggleSubmenuopen(id) {
+    const submenu = document.getElementById(id);
+    submenu.style.display = 'block';
+}
 function toggleMenu(buttonId, submenuId) {
     document.addEventListener('click', function (event) {
         if (event.target && event.target.id === buttonId) {

@@ -33,19 +33,19 @@ header {
 }
 
 .logo img {
-    height: 42px;
+    height: 43px;
 }
 
 .sidebar {
     position: fixed;
     left: 0;
     top: 100px;
-    width: 16%;
+    width: 14%;
     max-width: 250px;
     height: calc(100% - 200px);
     background-color: #ffffff;
     padding: 10px;
-    margin: 0px 5%;
+    margin: 0px 3%;
     border: 2px solid #cccccc;
     border-radius: 10px;
     overflow-y: auto; /* Enable scrolling when content exceeds height */
@@ -148,6 +148,7 @@ header {
     padding: 5px 0px;
     height: 25px;
     width: 100px;
+    align-items: center; /* 수직 중앙 정렬 */
     border-bottom: 1px solid #ececec; /* Add bottom border */
 }
 
@@ -163,8 +164,8 @@ header {
 }
 /* 메인 콘텐츠가 사이드바에 가려지지 않도록 여백 추가 */
 .main-content {
-    margin-left: 5%; /* 사이드바가 나타날 공간 확보 */
-    padding-left: 18%;
+    margin-left: 3%; /* 사이드바가 나타날 공간 확보 */
+    padding-left: 16%;
     transition: margin-left 0.3s ease;
 }
 .start-content {
@@ -179,7 +180,7 @@ header {
 
 
 .nav {
-    margin-left: 6vw;
+    margin-left:10vw;
     list-style: none;
     display: flex;
     gap: 6vw;
@@ -233,7 +234,7 @@ header {
 .breadcrumb {
     position: absolute; /* 부모 요소를 기준으로 위치 설정 */
     top: 100px; /* 위에서 20px */
-    right: 6%; /* 왼쪽에서 30px */
+    right:3vw;/*왼쪽에서 30px */
     font-size: 100%;
     color: #6d6e6c;
 }
@@ -308,10 +309,10 @@ header {
 .dashboard-box {
     margin-left: 30px;
     margin-bottom: 30px;
-    width: 90%;
+    width:94%;
     height: 100%;
     background-color: white;
-    border: 2px solid #ccc;
+    border: 2px solid #f3f3f3;
     
 }
 
@@ -321,7 +322,7 @@ header {
     width: 90%;
     height: 50%;
     background-color: white;
-    border: 2px solid #ccc;
+    border: 2px solid #f3f3f3;
     
 }
 
