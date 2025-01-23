@@ -6,15 +6,25 @@
 body {
     font-family: "nanum", Arial;
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
     background-color: #fff;
 }
 
 header {
-    background-color: #d6e4f2;
-    padding: 2px 30px;
+    background-color: #d6e4f2; /* 배경색 유지 */
+    padding: 5px 30px;
     display: flex;
     align-items: center;
+
+    /* 상자 아래 그림자 추가 */
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+
+    /* 스크롤 시 상단 고정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 다른 요소 위에 표시되도록 */
 }
 
 .logo {
@@ -23,15 +33,9 @@ header {
 }
 
 .logo img {
-    height: 60px;
+    height: 42px;
 }
 
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    color: #000000;
-}
 .sidebar {
     position: fixed;
     left: 0;
@@ -139,13 +143,14 @@ header {
 
 .nav-submenu-btn {
     text-decoration: none;
-    color: black;
+    color: #222222;
     display: block;
     padding: 5px 0px;
     height: 25px;
     width: 100px;
     border-bottom: 1px solid #ececec; /* Add bottom border */
 }
+
 
 .nav-submenu-btn:hover {
     background-color: #f0f8ff;
@@ -171,28 +176,25 @@ header {
     margin-left: 0; /* 사이드바가 숨겨질 때 여백 제거 */
 }
 
-nav {
-    margin-left: 95px;
-}
+
 
 .nav {
+    margin-left: 6vw;
     list-style: none;
     display: flex;
-    margin: 100;
-    padding: 0;
+    gap: 6vw;
+    padding: 0%;
 }
 
 .nav li {
     position: relative;
-    margin-right: 90px;
 }
 
 .nav-btn {/*상단바 버튼*/
     text-decoration: none;
-    color: #6D6D6D;
+    color: #222222;
     padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 19px;
     transition: color 0.3s ease;
 }
 
@@ -206,7 +208,7 @@ nav {
     top: 100%;
     left: 0;
     background-color: #fff;
-    border: 1px solid #25357c;
+    border: 1px solid #1859af;
     padding: 10px;
     list-style: none;
     width: 150px;
@@ -218,7 +220,7 @@ nav {
 
 .submenu-btn {
     text-decoration: none;
-    color: black;
+    color: #222222;
     display: block;
     padding: 5px 10px;
 }
@@ -231,9 +233,9 @@ nav {
 .breadcrumb {
     position: absolute; /* 부모 요소를 기준으로 위치 설정 */
     top: 100px; /* 위에서 20px */
-    right: 6.5%; /* 왼쪽에서 30px */
+    right: 6%; /* 왼쪽에서 30px */
     font-size: 100%;
-    color: #666;
+    color: #6d6e6c;
 }
 
 
