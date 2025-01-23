@@ -89,9 +89,6 @@ document.addEventListener('click', function (event) {
     } 
 });
 
-const selectedTitle = document.getElementById('selected-title');
-const lastUpdatedTitle = document.getElementById('last-updated-title');
-
 var viz;  // Variable to hold the Tableau Viz object
 var dashboardBox = document.querySelector('.dashboard-box');
 
@@ -110,10 +107,7 @@ function handleButtonClick(button, tableauURL) {
         btn.classList.add('inactive-btn');
         }
     });
-    selectedTitle.textContent = button.textContent;
-    lastUpdatedTitle.style.display = 'block';
-
-    // Dispose existing viz if it exists
+        // Dispose existing viz if it exists
     if (viz) {
         try {
             viz.dispose();
