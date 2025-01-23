@@ -24,7 +24,6 @@ async function loadHTML(id, url, fallbackUrl = null) {
 document.addEventListener("DOMContentLoaded", function () {
     loadHTML("nav", "./components/nav.html", "../components/nav.html");
 });
-
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.nav-submenu')&& !event.target.closest('.nav-submenu-btn')){
         document.querySelectorAll('.nav-submenu').forEach(function(element) {
@@ -32,7 +31,8 @@ document.addEventListener('click', function(event) {
         });
     }
 });
--
+
+
 // 하위 메뉴 토글 기능
 function toggleSubmenu(id) {
     const submenu = document.getElementById(id);
