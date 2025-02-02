@@ -81,8 +81,6 @@ document.addEventListener('click', function (event) {
         sidebar.style.display = 'block';
         mainContent.classList.add('toggled');
         mainContent.style.display = 'block'; 
-        const gradeSubmenu = document.getElementById('grade-submenu');
-        const dashboardTitle = document.getElementById('dashboard-title');
         gradeSubmenu.style.display = 'none';  // 하위 메뉴 숨기기
         dashboardTitle.style.display = 'none';  // 최종 업데이트 일시 숨기기
         Title.textContent = this.textContent;

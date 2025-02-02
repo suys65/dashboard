@@ -144,7 +144,7 @@ header {
 .nav-submenu-btn {
     text-decoration: none;
     color: #222222;
-    display: block;
+    display: flex;
     padding: 5px 0px;
     height: 25px;
     width: 100px;
