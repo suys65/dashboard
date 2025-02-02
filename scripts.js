@@ -327,16 +327,6 @@ document.addEventListener('DOMContentLoaded', function() {    //휴복학
     // 함수 호출로 이벤트 핸들러 설정
     setupButtonHandlers(grade_leavereturn_btn1, grade_leavereturn_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17370272905130/sheet1?:origin=card_share_link&:embed=n');
 
-    const major_term_btn1 = document.getElementById('major_term_btn1');
-    const major_term_btn2 = document.getElementById('major_term_btn2');
-    // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_term_btn1, major_term_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet6?:origin=card_share_link&:embed=n');
-
-    const grade_term_btn1 = document.getElementById('grade_term_btn1');
-    const grade_term_btn2 = document.getElementById('grade_term_btn2');
-    // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(grade_term_btn1, grade_term_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_0/sheet6?:origin=card_share_link&:embed=n');
-
 });
 
 document.addEventListener('DOMContentLoaded', function() {    //전과
