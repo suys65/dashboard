@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {  //교원
     const major_prof_btn1 = document.getElementById('major_prof_btn1');
     const major_prof_btn2 = document.getElementById('major_prof_btn2');
     // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_prof_btn1, major_prof_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367103142750/3?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_prof_btn1, major_prof_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17384942299570/3?:origin=card_share_link&:embed=n');
        
     const major_staff_btn1 = document.getElementById('major_staff_btn1');
     const major_staff_btn2 = document.getElementById('major_staff_btn2');
