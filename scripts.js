@@ -125,6 +125,7 @@ function handleButtonClick(button, tableauURL) {
     };
     try { 
         viz = new tableau.Viz(dashboardBox, tableauURL, options);
+        
     // Create new Tableau Viz
     } catch { 
         dashboardBox.innerHTML = `<img src="${tableauURL}" alt="대체 이미지" style="width: 100%; height: auto;">`;
@@ -253,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {  //교육만족도
     const major_satis_btn1 = document.getElementById('major_satis_btn1');
     const major_satis_btn2 = document.getElementById('major_satis_btn2');
     // 함수 호출로 이벤트 핸들러 설정
-    setupButtonHandlers(major_satis_btn1, major_satis_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367416114790/2?:origin=card_share_link&:embed=n');
+    setupButtonHandlers(major_satis_btn1, major_satis_btn2, 'https://prod-apnortheast-a.online.tableau.com/t/inu_dashboard/views/_17367416114790/1?:origin=card_share_link&:embed=n');
        
 });
 //학적-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
