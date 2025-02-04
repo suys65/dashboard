@@ -157,6 +157,11 @@ function setupButtonHandlers(button1, button2, link) {
     const newButton1 = document.getElementById(button1.id);
     const newButton2 = document.getElementById(button2.id);
     
+    const defaultButton = document.querySelector("[data-default='true']");
+    if (defaultButton) {
+        defaultButton.click();
+    }
+    
     // 버튼 1 클릭 이벤트
     newButton1.addEventListener('click', function () {
         handleButtonClick(newButton1, link);
